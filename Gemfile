@@ -1,24 +1,35 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
-gem "faraday", "2.14.1"
-gem "faraday-retry", "2.4.0"
-gem "github-pages", "~> 232", group: :jekyll_plugins
-gem "json", "2.19.3"
-gem "language_server-protocol", "3.17.0.5"
-gem "nokogiri", "~> 1.19.2"
-gem "rake", "13.3.1"
-gem "rubocop", "1.86.0"
+# Jekyll is used to build the static site
+gem "jekyll", "~> 3.9"
 
-group :test do
-  gem "fastimage"
-  gem "httparty"
-  gem "minitest"
-  gem "octokit"
-  gem "pry", require: false
-  gem "rubocop-performance"
-  gem "safe_yaml"
+# GitHub Pages compatible plugins
+gem "jekyll-feed", "~> 0.15"
+gem "jekyll-sitemap", "~> 1.4"
+gem "jekyll-redirect-from", "~> 0.16"
+
+# Used for linting and validation
+gem "html-proofer", "~> 4.4"
+
+# Markdown rendering
+gem "kramdown", "~> 2.4"
+gem "kramdown-parser-gfm", "~> 1.1"
+
+# Development and testing tools
+group :development, :test do
+  gem "rake", "~> 13.0"
+  gem "rubocop", "~> 1.57"
+  gem "rubocop-rake", "~> 0.6"
 end
 
-group :development do
-  gem "webrick"
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo-data"
 end
+
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1", platforms: %i[mingw x64_mingw mswin]
