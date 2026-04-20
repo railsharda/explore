@@ -26,6 +26,8 @@ group :development, :test do
   gem "rubocop-performance", "~> 1.19"
   # pry is handy for debugging locally
   gem "pry", "~> 0.14"
+  # prettier output for pry - makes object inspection much easier to read
+  gem "pry-byebug", "~> 3.10"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
