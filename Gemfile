@@ -24,6 +24,8 @@ group :development, :test do
   gem "rubocop-rake", "~> 0.6"
   # rubocop-performance helps catch slow Ruby patterns
   gem "rubocop-performance", "~> 1.19"
+  # pry is handy for debugging locally
+  gem "pry", "~> 0.14"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
