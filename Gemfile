@@ -28,6 +28,8 @@ group :development, :test do
   gem "pry", "~> 0.14"
   # prettier output for pry - makes object inspection much easier to read
   gem "pry-byebug", "~> 3.10"
+  # awesome_print makes console output much more readable during local dev
+  gem "awesome_print", "~> 1.9"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
