@@ -33,6 +33,8 @@ group :development, :test do
   # binding_of_caller is required by better_errors for full REPL in error pages
   gem "better_errors", "~> 2.10"
   gem "binding_of_caller", "~> 1.0"
+  # solargraph provides IDE-like autocomplete and type checking in VS Code
+  gem "solargraph", "~> 0.49"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
