@@ -41,6 +41,8 @@ group :development, :test do
   # rerun is a simpler alternative to guard for restarting the jekyll server
   # on file changes; usage: bundle exec rerun -- jekyll serve
   gem "rerun", "~> 0.14"
+  # irb with nice formatting; personal preference over plain irb
+  gem "irb", "~> 1.8"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
