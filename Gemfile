@@ -35,6 +35,9 @@ group :development, :test do
   gem "binding_of_caller", "~> 1.0"
   # solargraph provides IDE-like autocomplete and type checking in VS Code
   gem "solargraph", "~> 0.49"
+  # guard-livereload auto-refreshes the browser on file changes during local dev
+  # run with: bundle exec guard
+  gem "guard-livereload", "~> 2.5"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
