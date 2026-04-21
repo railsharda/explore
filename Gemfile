@@ -26,7 +26,7 @@ group :development, :test do
   gem "rubocop-performance", "~> 1.19"
   # pry is handy for debugging locally
   gem "pry", "~> 0.14"
-  # prettier output for pry - makes object inspection much easier to read
+  # pry-byebug adds step-by-step debugging (next, step, continue commands)
   gem "pry-byebug", "~> 3.10"
   # awesome_print makes console output much more readable during local dev
   gem "awesome_print", "~> 1.9"
