@@ -38,6 +38,9 @@ group :development, :test do
   # guard-livereload auto-refreshes the browser on file changes during local dev
   # run with: bundle exec guard
   gem "guard-livereload", "~> 2.5"
+  # rerun is a simpler alternative to guard for restarting the jekyll server
+  # on file changes; usage: bundle exec rerun -- jekyll serve
+  gem "rerun", "~> 0.14"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
