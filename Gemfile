@@ -30,6 +30,9 @@ group :development, :test do
   gem "pry-byebug", "~> 3.10"
   # awesome_print makes console output much more readable during local dev
   gem "awesome_print", "~> 1.9"
+  # binding_of_caller is required by better_errors for full REPL in error pages
+  gem "better_errors", "~> 2.10"
+  gem "binding_of_caller", "~> 1.0"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
