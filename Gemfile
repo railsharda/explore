@@ -43,6 +43,8 @@ group :development, :test do
   gem "rerun", "~> 0.14"
   # irb with nice formatting; personal preference over plain irb
   gem "irb", "~> 1.8"
+  # byebug as a standalone debugger fallback (useful outside of pry sessions)
+  gem "byebug", "~> 11.1"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
